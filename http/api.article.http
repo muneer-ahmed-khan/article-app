@@ -1,0 +1,43 @@
+### generate token for user
+POST http://localhost:3000/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "email": "sample@gmail.com",
+    "password": "test"
+}
+
+### get all articles 
+GET http://localhost:3000/article/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2FtcGxlQGVtYWlsLmNvbSIsImlhdCI6MTcwMzUzMDE5MSwiZXhwIjoxNzAzNTMxMDkxfQ.0Tq-_sQ7feiRsS86_izoAV_4kanvaqDmB0qedfk_MQE
+
+
+### get an article by id
+GET http://localhost:3000/article/1 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2FtcGxlQGVtYWlsLmNvbSIsImlhdCI6MTcwMzUzMDE5MSwiZXhwIjoxNzAzNTMxMDkxfQ.0Tq-_sQ7feiRsS86_izoAV_4kanvaqDmB0qedfk_MQE
+
+### create a new article
+POST http://localhost:3000/article HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2FtcGxlQGVtYWlsLmNvbSIsImlhdCI6MTcwMzUzMDE5MSwiZXhwIjoxNzAzNTMxMDkxfQ.0Tq-_sQ7feiRsS86_izoAV_4kanvaqDmB0qedfk_MQE
+content-type: application/json
+
+{
+    "title": "my first test article",
+    "body": "Lorma ipsum test article to see how it works"
+}
+
+### update article by id
+Patch http://localhost:3000/article/1 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2FtcGxlQGVtYWlsLmNvbSIsImlhdCI6MTcwMzUzMDE5MSwiZXhwIjoxNzAzNTMxMDkxfQ.0Tq-_sQ7feiRsS86_izoAV_4kanvaqDmB0qedfk_MQE
+content-type: application/json
+
+{
+
+    "body":"test body"
+}
+
+
+### delete article by id
+DELETE http://localhost:3000/article/1 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2FtcGxlQGVtYWlsLmNvbSIsImlhdCI6MTcwMzUzMDE5MSwiZXhwIjoxNzAzNTMxMDkxfQ.0Tq-_sQ7feiRsS86_izoAV_4kanvaqDmB0qedfk_MQE
+
