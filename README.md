@@ -1,5 +1,5 @@
 
-  <p align="center">A simple Nest.js Application for users and their bookmarks with JWT authentication in place.</p>
+  <p align="center">A simple Nest.js Application for users and their artcles with JWT authentication in place.</p>
     <p align="center">
 
 ## Description
